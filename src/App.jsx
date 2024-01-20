@@ -15,7 +15,7 @@ function App() {
       <div className='App'>
         <Provider store={confStore}> 
         <BrowserRouter>
-        <Navbar />
+        <Navbar/>
           <Routes>
             <Route path='/' element={<Home/>} />
             <Route path='/cart' element={<Cart/>} />

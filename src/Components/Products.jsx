@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { add } from '../store/CartSlice';
 
 const Products = () => {
 
     const dispetch = useDispatch();
+    const select = useSelector((state)=>state.cart)
 
     const [Products, setProducts] = useState([]);
     useEffect(() => {
